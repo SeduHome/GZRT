@@ -1,0 +1,10 @@
+@echo off
+if not exist "9953.txt" (
+ 
+msg * warum arbeitet du nicht weiter?
+ 
+)
+echo CRAT-TEMP>9953.txt
+exit
+ 
+powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('ICH BIN EIN ZAUBERER{ENTER}')"
